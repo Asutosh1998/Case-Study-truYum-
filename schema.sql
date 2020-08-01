@@ -1,3 +1,5 @@
+--1)Creating Menu_Items Table
+
 create table Menu_Items(
 	item_id int not null primary key,
 	[Name] varchar(max),
@@ -8,13 +10,17 @@ create table Menu_Items(
 	[Free Delivery] varchar(3),
 )	
 go
-drop table menu_Items
-drop table cart_Item
+
+--2)Creating Users Table
+
 create table users(
 	user_Id int not null primary key,
 	user_name varchar(max),
 )
 go
+
+--3)Creating Cart-Item Table
+
 create table cart_Item(
 	cart_id int not null primary key,
 	users_id int,
